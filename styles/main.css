@@ -10,15 +10,53 @@
     font-family: var(--ff-primary);
     background-color: var(--clr-surface-page);
     color: var(--clr-text-primary);
+    overflow-x: clip;
   }
 
   :focus-visible {
-    outline: 2px solid var(--clr-focus, currentColor);
-    outline-offset: 3px;
+    outline: 0.125rem solid var(--clr-focus, currentColor);
+    outline-offset: 0.1875rem;
   }
 }
 
-@layer layout {}
+@layer layout {
+
+  body {
+    position: relative;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset-inline: 0;
+      inset-block-start: 0;
+
+      block-size: 26.55rem;
+      background-color: var(--clr-surface-pattern);
+      border-radius: 0 0 0 3.75rem;
+      pointer-events: none;
+      transform: translateX(50.5%);
+      z-index: -1;
+
+      @media (width >=48rem) {
+        block-size: 24.4rem;
+        transform: translateX(28.9%);
+      }
+
+      @media (width >=70rem) {
+        block-size: 26.7rem;
+        transform: translateX(51.05%);
+      }
+    }
+  }
+
+  .container {
+    inline-size: clamp(19.4375rem, 82.5vw, 69.375rem);
+    margin-inline: auto;
+  }
+}
 
 @layer components {}
 
