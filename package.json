@@ -1,0 +1,14 @@
+{
+  "name": "fem-js-junior-02-project-tracking-intro-component",
+  "version": "1.0.0",
+  "description": "Frontend Mentor - Project Tracking Intro Component",
+  "author": "VIMP",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "dev": "servor . --reload"
+  },
+  "devDependencies": {
+    "servor": "^4.0.2"
+  }
+}
