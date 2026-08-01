@@ -1,0 +1,26 @@
+@layer fonts {
+
+  @font-face {
+    font-family: 'Barlow Condensed';
+    src: url('../assets/fonts/barlowcondensed-regular.woff2') format('woff2');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Barlow Condensed';
+    src: url('../assets/fonts/barlowcondensed-bold.woff2') format('woff2');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: 'Barlow';
+    src: url('../assets/fonts/barlow-regular.woff2') format('woff2');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+  }
+}
