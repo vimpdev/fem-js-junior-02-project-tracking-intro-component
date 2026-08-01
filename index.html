@@ -1,37 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Project tracking intro component</title>
+  <title>Project Tracking | Frontend Mentor</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="./scripts/main.js" defer></script>
 </head>
+
 <body>
-  Product
-  Features
-  Pricing
-  Login
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="./assets/images/logo.svg" alt="Monograph">
+      </a>
 
-  New
-  Monograph Dashboard
+      <button type="button" class="menu-toggle" aria-controls="menu" aria-expanded="false" aria-label="Open menu">
+        <svg class="icon icon--open" aria-hidden="true">
+          <use href="./assets/images/ui.svg#bars"></use>
+        </svg>
 
-  Powerful insights into your team
-  Project planning and time tracking for agile teams
+        <svg class="icon icon--close" aria-hidden="true">
+          <use href="./assets/images/ui.svg#close"></use>
+        </svg>
+      </button>
 
-  Schedule a demo
-  to see a live preview
-  
-      <footer class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </footer>
+      <nav class="header__nav" id="menu" inert>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#">Product</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Features</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Pricing</a></li>
+          <li class="menu__item menu__item--login"><a class="menu__link" href="#">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__text">
+          <p class="hero__eyebrow">
+            <span class="hero__badge">New</span>
+            <span class="hero__label">Monograph Dashboard</span>
+          </p>
+          <h1 class="hero__title">Powerful insights into your team</h1>
+          <p class="hero__description">Project planning and time tracking for agile teams</p>
+        </div>
+
+        <div class="hero__cta">
+          <a href="#" class="button">Schedule a demo</a>
+          <a href="#" class="hero__preview-link">to see a live preview</a>
+        </div>
+      </div>
+
+      <div class="hero__media">
+        <img src="./assets/images/devices.svg" alt="">
+      </div>
+    </div>
+  </main>
+
+  <footer class="attribution">
+    <small>
+      Challenge by <a href="https://www.frontendmentor.io/challenges">Frontend Mentor</a> &ndash; Coded by <a
+        href="#">VIMP</a>
+    </small>
+  </footer>
 </body>
+
 </html>
