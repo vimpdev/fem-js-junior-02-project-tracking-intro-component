@@ -71,18 +71,3 @@ document.addEventListener('click', (e) => {
     setMenuState(false);
   }
 });
-
-
-
-
-
-// Ensure the mobile menu is closed when switching to the desktop layout.
-// desktopMediaQuery.addEventListener('change', (e) => {
-//   $navMenu.inert = false;
-// });
-
-
-
-// if (e.matches && isMenuExpanded()) {
-//   setMenuState(false);
-// }

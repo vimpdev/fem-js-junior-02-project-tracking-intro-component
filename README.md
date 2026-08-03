@@ -1,123 +1,125 @@
-# Frontend Mentor - Project tracking intro component solution
+# Project Tracking Intro Component
 
-This is a solution to the [Project tracking intro component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/project-tracking-intro-component-5d289097500fcb331a67d80e). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+![HTML](https://img.shields.io/badge/HTML-5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-000000?logo=javascript&logoColor=F7DF1E)
+![Responsive](https://img.shields.io/badge/Responsive-Mobile--First-5C6BC0)
+![Status](https://img.shields.io/badge/status-live-2ea44f)
 
-## Table of contents
+![](./docs/github-preview.png)
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-  - [AI Collaboration](#ai-collaboration)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+> **Development Focus:** Semantic HTML · Accessibility · Scalable CSS Architecture · Mobile-First Development
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+Landing page built with semantic HTML, modern CSS architecture using Cascade Layers and design tokens, and accessible JavaScript interactions.
 
-## Overview
+---
 
-### The challenge
+## Links
 
-Users should be able to:
+- [**Live Preview**](https://vimpdev.github.io/fem-js-junior-02-project-tracking-intro-component/)
+<!-- - [**Frontend Mentor Solution**]() -->
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Create the background shape using code
+---
 
-### Screenshot
+## Demo
 
-![](./screenshot.jpg)
+![](./docs/demo.gif)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+---
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+## Screenshots
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+| Mobile | Desktop |
+| --- | --- |
+| ![](./docs/mobile.avif) | ![](./docs/desktop.avif) |
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+--- 
 
-### Links
+## Features
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Responsive mobile-first layout
+- Accessible navigation with keyboard support
+- Reusable CSS architecture built with Cascade Layers
+- Design tokens and utility classes for scalable styling
 
-## My process
+---
 
-### Built with
+## Tech Stack
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- **HTML**
+  - Semantic elements
+  - WAI-ARIA attributes
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- **CSS**
+  - Cascade Layers
+  - Native CSS Nesting
+  - Design Tokens (Custom Properties)
+  - Logical Properties
+  - Flexbox
+  - Grid
+  - Mobile-first workflow
 
-### What I learned
+- **JavaScript**
+  - DOM manipulation
+  - Event handling
+  - State-driven UI
+  - Progressive enhancement
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+- **Tooling**
+  - pnpm
+  - Servor
+  - Git
+  - GitHub
 
-To see how you can add code snippets, see below:
+---
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+## Project Goals
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+- Recreate the provided Figma design with a responsive layout.
+- Build reusable UI patterns using native CSS features.
+- Apply accessible navigation patterns with modern browser APIs.
+- Practice writing maintainable, component-oriented code.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+---
 
-### Continued development
+## What I Learned
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+- Managing UI through a single state function keeps behavior predictable and avoids duplicated logic.
+- Cascade Layers provide a clean separation between base styles, layout, components, and utilities.
+- Modern browser APIs such as `inert` simplify accessibility without requiring additional JavaScript.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+---
 
-### Useful resources
+## JavaScript Highlights
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- **`inert`** — Removes the navigation from both focus order and user interaction while the mobile menu is collapsed.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- **`toggleAttribute()`** — Declaratively adds or removes boolean attributes, avoiding manual attribute management.
 
-### AI Collaboration
+- **`classList.toggle(name, force)`** — Explicitly synchronizes CSS classes with application state.
+  ```js
+  element.classList.toggle('is-expanded', isExpanded);
+  ```
 
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
+- **`Element.contains()`** — Detects whether a click occurred inside the navigation or toggle button, enabling click-outside behavior.
 
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
+- **State-driven UI** —  A single function synchronizes ARIA attributes, CSS classes, and interaction states, making the interface easier to maintain.
 
-**Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
+---
+
+## AI Collaboration
+AI was used as a development assistant for architecture discussions, accessibility reviews, code review, and concept clarification.
+
+All implementation, technical decisions, and final code were completed and validated manually.
+
+---
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor – [@vimpdev](https://www.frontendmentor.io/profile/vimpdev)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+---
 
-## Acknowledgments
+## Challenge Source
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Build as a solution to the [Project tracking intro component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/project-tracking-intro-component-5d289097500fcb331a67d80e).
